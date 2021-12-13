@@ -1,0 +1,126 @@
+{
+  "id": "ae6c99a9-596f-47e2-8c34-765e3bfdef78",
+  "version": "2.0",
+  "name": "Pruebas",
+  "url": "https://www.atestermate.com/AutomationExample.php",
+  "tests": [{
+    "id": "26393440-a147-4392-b3a2-9735b9a97b53",
+    "name": "Prueba 1",
+    "commands": [{
+      "id": "544d5640-9b10-4396-bdc3-8f27ed4f037e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.atestermate.com/AutomationExample.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4efb2249-ead6-47df-8510-a443b8a115c8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1203x719",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbc024b2-f828-4fe0-aa8f-bfeacc7f40b2",
+      "comment": "",
+      "command": "click",
+      "target": "name=nEmail",
+      "targets": [
+        ["name=nEmail", "name"],
+        ["css=form > input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94ea946e-00e1-4a98-bb42-1600d73ffb95",
+      "comment": "",
+      "command": "type",
+      "target": "name=nEmail",
+      "targets": [
+        ["name=nEmail", "name"],
+        ["css=form > input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "hola@test.com"
+    }, {
+      "id": "a4cdda51-223a-4a1c-b068-7345cdc04fc0",
+      "comment": "",
+      "command": "click",
+      "target": "id=nPassword",
+      "targets": [
+        ["id=nPassword", "id"],
+        ["css=#nPassword", "css:finder"],
+        ["xpath=//input[@id='nPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06349cc2-5627-405b-b84c-d478660e163d",
+      "comment": "",
+      "command": "type",
+      "target": "id=nPassword",
+      "targets": [
+        ["id=nPassword", "id"],
+        ["css=#nPassword", "css:finder"],
+        ["xpath=//input[@id='nPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "f53c800c-b637-4f86-8f39-cb124b88ad55",
+      "comment": "",
+      "command": "click",
+      "target": "name=profile",
+      "targets": [
+        ["name=profile", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='profile']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04369412-791a-4d29-9d80-155a87cba64f",
+      "comment": "",
+      "command": "select",
+      "target": "name=profile",
+      "targets": [],
+      "value": "label=Automation Tester"
+    }, {
+      "id": "2c726ff1-3aa7-4ad1-ab63-833fc8f9f3cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=oneyear",
+      "targets": [
+        ["id=oneyear", "id"],
+        ["css=#oneyear", "css:finder"],
+        ["xpath=//input[@id='oneyear']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3802ef40-eaac-448b-ad9f-e33cfe914059",
+      "comment": "",
+      "command": "click",
+      "target": "name=nsubmit",
+      "targets": [
+        ["name=nsubmit", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='nsubmit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2fb92d60-86d1-4da7-93e0-b700511636ae",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["26393440-a147-4392-b3a2-9735b9a97b53"]
+  }],
+  "urls": ["https://www.atestermate.com/AutomationExample.php"],
+  "plugins": []
+}
