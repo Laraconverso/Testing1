@@ -1,0 +1,284 @@
+{
+  "id": "9098cd6c-88b0-49c6-b611-983a16122e71",
+  "version": "2.0",
+  "name": "Pruebas",
+  "url": "https://dsternlicht.github.io/RESTool/#/extras",
+  "tests": [{
+    "id": "11759bdc-20cd-4f3a-a30e-81376a31f4f7",
+    "name": "Prueba api",
+    "commands": [{
+      "id": "b0d705fc-c2c7-4274-9244-f66e8a4f05e5",
+      "comment": "",
+      "command": "open",
+      "target": "https://dsternlicht.github.io/RESTool/#/employees?search=&page=4&limit=3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82afb323-e7df-434e-976b-71bda07d810d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1259x719",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9218b436-b6ae-4be0-b1b9-41d73109c843",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-item",
+      "targets": [
+        ["css=.add-item", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/button", "xpath:idRelative"],
+        ["xpath=//header/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+ Add Item')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8df8694f-69b9-4c0f-896d-1a3b4c6a4c36",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(1) > .form-row:nth-child(1) > input",
+      "targets": [
+        ["css=form:nth-child(1) > .form-row:nth-child(1) > input", "css:finder"],
+        ["xpath=(//input[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup-portal']/div/div/div[2]/section/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/section/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f748e8e-f429-40df-9c98-e5c1258bc2eb",
+      "comment": "",
+      "command": "type",
+      "target": "css=form:nth-child(1) > .form-row:nth-child(1) > input",
+      "targets": [
+        ["css=form:nth-child(1) > .form-row:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@value='Hola']", "xpath:attributes"],
+        ["xpath=//div[@id='popup-portal']/div/div/div[2]/section/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/section/form/div/input", "xpath:position"]
+      ],
+      "value": "Hola"
+    }, {
+      "id": "d3691d15-0699-4ec2-b540-8337f49324ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=select",
+      "targets": [
+        ["css=select", "css:finder"],
+        ["xpath=//div[@id='popup-portal']/div/div/div[2]/section/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fca2aec-9579-4fa0-990c-787dcab0558a",
+      "comment": "",
+      "command": "select",
+      "target": "css=select",
+      "targets": [],
+      "value": "label=RESTool creator 😎"
+    }, {
+      "id": "266d1b95-52ea-436a-9d3e-68389536b907",
+      "comment": "",
+      "command": "click",
+      "target": "css=.green:nth-child(1)",
+      "targets": [
+        ["css=.green:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup-portal']/div/div/div[2]/section/form/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e008980c-04a8-4b27-820e-c9138b6e76ad",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(3) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/main/div/table/tbody/tr[3]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'Hola')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "523ce9bb-94a5-4aed-8cad-2f2672255c13",
+    "name": "Prueba 2",
+    "commands": [{
+      "id": "3d8cde23-4dcc-4003-af40-618f6913266b",
+      "comment": "",
+      "command": "open",
+      "target": "https://dsternlicht.github.io/RESTool/#/extras",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d783e7eb-d098-4935-b20e-caf0a33e3b1f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1259x719",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d657929b-6ef1-4406-af3a-f0cda9a9c4eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-item",
+      "targets": [
+        ["css=.add-item", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/button", "xpath:idRelative"],
+        ["xpath=//header/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+ Add Item')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5af79cb2-c8e0-43fe-977b-5b87bdce510b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.add-item",
+      "targets": [
+        ["css=.add-item", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/button", "xpath:idRelative"],
+        ["xpath=//header/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+ Add Item')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a6171bb-51c9-4ed7-964c-41c73e8c6300",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.add-item",
+      "targets": [
+        ["css=.add-item", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/header/button", "xpath:idRelative"],
+        ["xpath=//header/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+ Add Item')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc698f61-a878-4ad2-8c9d-46b1314715f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(1) input",
+      "targets": [
+        ["css=form:nth-child(1) input", "css:finder"],
+        ["xpath=(//input[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup-portal']/div/div/div[2]/section/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/section/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39d4fba5-7813-4337-9e48-47b0c97b106a",
+      "comment": "",
+      "command": "type",
+      "target": "css=form:nth-child(1) input",
+      "targets": [
+        ["css=form:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@value='Aloh']", "xpath:attributes"],
+        ["xpath=//div[@id='popup-portal']/div/div/div[2]/section/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/section/form/div/input", "xpath:position"]
+      ],
+      "value": "Prueba 2"
+    }, {
+      "id": "ff37845d-3942-4221-8404-466a47e51a0f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.green:nth-child(1)",
+      "targets": [
+        ["css=.green:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup-portal']/div/div/div[2]/section/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b43dab6-85c1-401d-ad9b-986fb3f5474d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(11) > td:nth-child(2) > span",
+      "targets": [
+        ["css=tr:nth-child(11) > td:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/main/div/table/tbody/tr[11]/td[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[11]/td[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Prueba 2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "549ede11-471b-4a4f-8fa5-30f14ad431c3",
+    "name": "Prueba 3",
+    "commands": [{
+      "id": "691cb065-f0b5-4ec2-a677-1005eca30f76",
+      "comment": "",
+      "command": "open",
+      "target": "https://dsternlicht.github.io/RESTool/#/extras",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30bf6bc7-e919-4339-af15-136c73ff1a17",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1259x719",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edb8a8cd-937d-4a0a-889f-03d574752ffb",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4dcc3c5e-eb1e-4e66-ae91-f625e422168b",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(11) .fa-times",
+      "targets": [
+        ["css=tr:nth-child(11) .fa-times", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/main/div/table/tbody/tr[11]/td[3]/div/button[2]/i", "xpath:idRelative"],
+        ["xpath=//tr[11]/td[3]/div/button[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "120999b0-b4ce-4c9e-aa44-e99d04a645ac",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you sure you want to delete this item?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21e5e99a-c527-4223-bb81-0c9a52dc4534",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59cf91d6-24f6-466b-9b40-990a1a5dae52",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58605b10-b334-4798-8f9b-2530ef57a75a",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=tr:nth-child(11) > td:nth-child(2) > span",
+      "targets": [
+        ["css=tr:nth-child(11) > td:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/main/div/table/tbody/tr[11]/td[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[11]/td[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Prueba 2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2b4ac110-219f-46c4-8292-50a095dfcfe5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["11759bdc-20cd-4f3a-a30e-81376a31f4f7"]
+  }],
+  "urls": ["https://dsternlicht.github.io/RESTool/#/employees?search=&page=4&limit=3", "https://dsternlicht.github.io/RESTool/#/extras"],
+  "plugins": []
+}
